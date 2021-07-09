@@ -33,7 +33,7 @@ class ProductController
         $file = Request::get('file');
         $rule = [
             "name" => [ "unique"=> "products", "required" => true, "minLength" => 5, "string" => true],
-            "description" => ["minlength" => 20],
+            "description" => ["minLength" => 20],
             "price" => ["number" => true]
         ];
         if ( CSRFToken::checkToken($post->token)) {

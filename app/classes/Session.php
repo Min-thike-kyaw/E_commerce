@@ -41,7 +41,7 @@ class Session
         self::add($key, $value);
     }
 
-    public function flash($key, $value ="")
+    public static function flash($key, $value ="")
     {
         
         if(!empty($value)) {

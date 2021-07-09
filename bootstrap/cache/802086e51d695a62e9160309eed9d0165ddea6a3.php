@@ -42,6 +42,7 @@
     </div>
     <div class="row mt-4">
         <div class="col-md-6 offset-md-5">
+        <h2>Categories</h2>
             <ul class="list-group">   
                 <?php $__currentLoopData = $cats; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>            
                     <li class="list-group-item">
@@ -64,7 +65,8 @@
 
     <div class="row mt-4">
         <div class="col-md-6 offset-md-5">
-            <ul class="list-group">   
+            <ul class="list-group">
+            <h2>Sub Categories</h2>
                 <?php $__currentLoopData = $subcats; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>            
                     <li class="list-group-item">
                     <?php echo e($cat->name); ?>

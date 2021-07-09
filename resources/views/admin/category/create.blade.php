@@ -42,6 +42,7 @@
     </div>
     <div class="row mt-4">
         <div class="col-md-6 offset-md-5">
+        <h2>Categories</h2>
             <ul class="list-group">   
                 @foreach($cats as $cat)            
                     <li class="list-group-item">
@@ -62,7 +63,8 @@
 
     <div class="row mt-4">
         <div class="col-md-6 offset-md-5">
-            <ul class="list-group">   
+            <ul class="list-group">
+            <h2>Sub Categories</h2>
                 @foreach($subcats as $cat)            
                     <li class="list-group-item">
                     {{$cat->name}}
